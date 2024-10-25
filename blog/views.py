@@ -1,9 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.http import HttpRequest, HttpResponseRedirect
-from django.contrib.auth.models import User
-from django.template.defaulttags import comment
-
 from .models import Post
 from .forms import blog_form
 from django.template.defaultfilters import slugify

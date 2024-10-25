@@ -9,9 +9,7 @@
         <h1 text-align: center>{{ post.title }} </h1>
         by <strong> {{ post.authorid.username }} </strong>
     </div>
-    <p style="text-align:center;">
-        {{ post.content }}
-    </p>
+        {{ post.content|safe }}
     {% for comment in comments %}
         {{ comment.content  }} from <b>{{ comment.authorid }}</b> <br>
     {% endfor %}

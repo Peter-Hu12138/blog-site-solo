@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from ckeditor.fields import RichTextField
 
 STATUS = (
     (0, "Draft"),
@@ -14,7 +15,7 @@ class Post(models.Model):
     # related_name: a way for parent model to reference to child model
     updated_on = models.DateTimeField(auto_now=True)  # auto set date to now whenever modified
     released_date = models.DateField(auto_now_add=True)  # auto set date to now when first created
-    content = models.TextField()
+    content = RichTextField(null=True, blank=True, config_name="special")
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:

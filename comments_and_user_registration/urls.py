@@ -19,11 +19,12 @@ from django.urls import include, path
 from members import views
 
 urlpatterns = [
+    path('', views.main, name='home'),
     path("admin/", admin.site.urls),
     path('', include('members.urls')),
     path('', include('account.urls')),
-    path('', views.main, name='home'),
     path('blog/', include('blog.urls')),
+    path('about/', include('about.urls')),
     path('testing/', views.testing, name='testing'),
     # replaced by account/signup
     # path('user_registration/', views.user_registration, name='user_registration'),

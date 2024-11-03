@@ -1,9 +1,43 @@
 {% extends "master.html" %}
-
+{% load static %}
 {% block title %}
-  Jingtian's Blog Site
+  Jingtian's Personal Website
 {% endblock %}
 
 {% block content %}
-  <h1 style="text-align: center"> Jingtian's Blog Site </h1>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12">
+        <h2 style="text-align:center;">
+          Welcome to Jingtian's Personal Website
+        </h2>
+      </div>
+
+      <div class="col-6">
+        <p>
+          Hello, this is Jingtian Hu, a CS first year student at the University of Toronto.
+        </p>
+        <p>
+          I was borned and raised in Shenzhen, China for my entire life before I came to Toronto for higer
+          education.
+          I like playing <a href="video_games.html">video games</a>, <a href="ultimate_frisbee.html">
+            ultimate frisbee</a>, and solving <a href="math&cs.html"> math, cs, and biology problems</a>.
+        </p>
+        <p>
+          If you are an employer, please check my full <a href="CV.pdf">CV</a> and my <a
+            href="https://www.linkedin.com/in/jingtian-hu-528b2a2b8/">Linkedin profile</a>.
+        </p>
+      </div>
+
+      <div class="col-6">
+        <img src={% static 'i_with_sc_goat.jpg' %} alt="I with the 2023 world champion" class="center">
+        <p style="text-align:center;"> I with the best starcraft pro: Oliveira </p>
+      </div>
+
+    </div>
+
+  </div>
+    <script>
+        document.getElementById("home").classList.add("active");
+    </script>
 {% endblock %}

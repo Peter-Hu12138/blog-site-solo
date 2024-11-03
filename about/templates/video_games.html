@@ -1,0 +1,93 @@
+{% extends "master.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 style="text-align:center;"> Jingtian Hu's Taste of Video Games
+                </h1>
+            </div>
+        </div>
+        <div class="row gx-2">
+            <div class="col-lg-6">
+                <table class="table table-info table-striped table-hover">
+                    <caption>Online games</caption>
+                    <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>ID Tag</th>
+                        <th>Games</th>
+                        <th>Rank (if applicable)</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divier">
+                    <tr>
+                        <th rowspan="2">Riot</td>
+                        <td rowspan="2">GUXUE#1382</td>
+                        <td>Valorant</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>LOL</td>
+                        <td>Bronze</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Blizzard</td>
+                        <td rowspan="2">diem#4831</td>
+                        <td>Overwatch</td>
+                        <td>Master</td>
+                    </tr>
+                    <tr>
+                        <td>Startcraft 2</td>
+                        <td>Diamond</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6">
+                <div class="table-responsive-md">
+                    <table class="table table-danger table-hover">
+                        <caption>Offline games</caption>
+                        <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Games</th>
+                            <th>Progress</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th rowspan="4">Adventure, story</td>
+                            <td>Red Dead Redemption 2</td>
+                            <td>Finished</td>
+                        </tr>
+                        <tr>
+                            <td>GTA5</td>
+                            <td>Finished</td>
+                        </tr>
+                        <tr>
+                            <td>Control</td>
+                            <td>On going</td>
+                        </tr>
+                        <tr>
+                            <td>Zelda Series</td>
+                            <td>On going</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="1">Sports</td>
+                            <td>FC24</td>
+                            <td>Rarely played lately</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("games").classList.add("active")
+    </script>
+
+
+{% endblock %}
